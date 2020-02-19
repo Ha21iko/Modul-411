@@ -49,4 +49,6 @@ public class Quick {
         qs.quickSort(A);
         System.out.println(Arrays.toString(A));
     }
+
+
 }
