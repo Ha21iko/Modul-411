@@ -44,7 +44,7 @@ boolean search(int[] A, int w)
         }
         return false;
     }
-    ```    
+```    
 # Selection Sort
 ```java
  private static void selectionSort(int[] arr){
