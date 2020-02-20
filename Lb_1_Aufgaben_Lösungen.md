@@ -46,6 +46,8 @@ boolean search(int[] A, int w)
     }
 ```    
 # Selection Sort
+Gegeben ist folgende Sequenz 9,7,8,1,2,3
+
 ```java
  private static void selectionSort(int[] arr){
         for (int i = 0; i < arr.length-1; i++){
@@ -70,5 +72,30 @@ boolean search(int[] A, int w)
 - **1**,**2**,**3**,9,7,8
 - **1**,**2**,**3**,**7**,9,8
 - **1**,**2**,**3**,**7**,**8**,9
+- fertig
+
+# Insertion Sort
+Gegeben ist folgende Sequenz 1,1,2,2,3,3
+```java
+int behindValue;
+        int currentValue;
+        for (int i = 0; i < list.length;i++) {
+            currentValue = list[i];
+            behindValue = i-1;
+            while (behindValue >= 0 && list[behindValue] **<** currentValue)
+            {
+                list[behindValue+1] = list[behindValue];
+                behindValue = behindValue - 1;
+            }
+            list[behindValue + 1] = currentValue;
+
+        }
+```
+- **1**,1,2,2,3,3
+- **1**,**1**,2,2,3,3
+- **2**,**1**,**1**,2,3,3
+- **2**,**2**,**1**,**1**,3,3
+- **3**,**2**,**2**,**1**,**1**,3
+- **3**,**3**,**2**,**2**,**1**,**1**
 - fertig
 
