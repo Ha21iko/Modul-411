@@ -34,6 +34,7 @@ boolean search(int[] A, int w)
 }
 
 # Lösung Array 2
+```java
 // Array A2 Lösung
     private static boolean search(int[] A, int w){
         for (int number: A) {
@@ -43,8 +44,9 @@ boolean search(int[] A, int w)
         }
         return false;
     }
-    
+    ```    
 # Selection Sort
+```java
  private static void selectionSort(int[] arr){
         for (int i = 0; i < arr.length-1; i++){
             for (int k = i; k < arr.length-1; k++){
@@ -60,6 +62,7 @@ boolean search(int[] A, int w)
             System.out.print(n);
         }
     }
+```    
     
 - 9,7,8,1,2,3
 - *1*,7,8,9,2,3
