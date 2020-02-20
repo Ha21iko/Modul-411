@@ -43,5 +43,29 @@ boolean search(int[] A, int w)
         }
         return false;
     }
-
+    
+# Selection Sort
+ private static void selectionSort(int[] arr){
+        for (int i = 0; i < arr.length-1; i++){
+            for (int k = i; k < arr.length-1; k++){
+                if (arr[i] > arr[k+1]){
+                    int t = arr[i];
+                    arr[i] = arr[k+1];
+                    arr[k+1] = t;
+                }
+            }
+        }
+        // Ausgabe
+        for (int n: arr ) {
+            System.out.print(n);
+        }
+    }
+    
+- 9,7,8,1,2,3
+- *1*,7,8,9,2,3
+- *1*,*2*,8,9,7,3
+- *1*,*2,*3*,9,7,8
+- *1*,*2*,*3*,*7*,9,8
+- *1*,*2*,*3*,*7*,*8*,9
+- fertig
 
