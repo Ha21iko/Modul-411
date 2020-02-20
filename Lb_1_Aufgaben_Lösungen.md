@@ -82,7 +82,8 @@ int behindValue;
         for (int i = 0; i < list.length;i++) {
             currentValue = list[i];
             behindValue = i-1;
-            while (behindValue >= 0 && list[behindValue] **<** currentValue)
+            // gross..klein
+            while (behindValue >= 0 && list[behindValue] < currentValue)
             {
                 list[behindValue+1] = list[behindValue];
                 behindValue = behindValue - 1;
