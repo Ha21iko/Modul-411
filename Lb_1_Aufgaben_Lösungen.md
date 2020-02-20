@@ -99,3 +99,22 @@ int behindValue;
 - **3**,**3**,**2**,**2**,**1**,**1**
 - fertig
 
+# Aufgabe Array-suche für SlectionSort
+Gesucht ist ein beliebiges Array mit fünf Int-Werten, wo der Selection
+Sort Algorithmus nur genau eine swap Operation ausführen muss, um das
+Array aufsteigend zu sortieren.
+
+Bem: Es gibt nicht nur eine Lösung.
+Geben Sie analoge eine Sequenz an, wo die ersten zwei Vergleiche ein
+swap zur Folge haben, dann aber nicht mehr.
+
+# Lösung Aufgabe Array-suche
+```java
+// Ein swap
+int[] array = {2,1,3,4,5};
+```
+
+```java
+// Zwei swap
+int[] array = {3,2,1,4,5};
+```
