@@ -44,24 +44,49 @@ boolean search(int[] A, int w)
         }
         return false;
     }
-```    
+```  
+# Bubble Sort
+```java
+private static void bubbleSort(int[] arr){
+        for (int i = 0; i < arr.length-1; i++){
+            for (int k = 1; k < arr.length-i; k++){
+                if (arr[k-1] > arr[k]){
+                    int t = arr[k-1];
+                    arr[k-1] = arr[k];
+                    arr[k] = t;
+                }
+            }
+        }
+        for (int number: arr) {
+            System.out.print(number+";");
+        }
+    }
+```
+
 # Selection Sort
 Gegeben ist folgende Sequenz 9,7,8,1,2,3
 
 ```java
- private static void selectionSort(int[] arr){
-        for (int i = 0; i < arr.length-1; i++){
-            for (int k = i; k < arr.length-1; k++){
-                if (arr[i] > arr[k+1]){
-                    int t = arr[i];
-                    arr[i] = arr[k+1];
-                    arr[k+1] = t;
+private static void selectionSort(int[] arr){
+        int n = arr.length;
+
+        // One by one move boundary of unsorted subarray
+        for (int i = 0; i < n-1; i++)
+        {
+            // Find the minimum element in unsorted array
+            int min_idx = i;
+            for (int j = i+1; j < n; j++)
+                if (arr[j] < arr[min_idx]){
+                    min_idx = j;
                 }
-            }
+            // Swap the found minimum element with the first
+            // element
+            int temp = arr[min_idx];
+            arr[min_idx] = arr[i];
+            arr[i] = temp;
         }
-        // Ausgabe
-        for (int n: arr ) {
-            System.out.print(n);
+        for (int number: arr) {
+            System.out.print(number+",");
         }
     }
 ```    
@@ -119,3 +144,110 @@ int[] array = {2,1,3,4,5};
 // Zwei swap
 int[] array = {3,2,1,4,5};
 ```
+
+# Zeitmessung Aufgabe
+
+## Zeitmessung-Code korrigiren
+```java
+import java.util.Scanner;
+
+ /**
+ This program measures how long it takes to sort an
+ array of a user-specified size with the insertion
+ sort algorithm.
+ */
+ public class InsertionSortTimer
+{
+ public static void main(String[] args)
+{
+ Scanner in = new Scanner(System.in);
+ System.out.print("Enter array size: ");
+ int n = in.nextInt();
+ // Construct random array
+int[] a = ArrayUtil.randomIntArray(n, 100);
+ // Use stopwatch to time selection sort
+ Stopwatch timer1 = new Stopwatch();
+ sorter.sort();
+ System.out.println("Elapsed time: " + timer1.elapsedTime + " milliseconds");
+ }
+}
+```
+## Lösung Zeitmessung Code
+- Messung misst auch noch die Ausgabe auf der Konsole, das will man nicht
+
+### Korrektur Zeitmessung-Code
+```java
+    // Zuerst Wert zuweisen, dann ausgeben!
+    double elapsedTime = timer1.elapsedTime; 
+    System.out.println("Elapsed time: “ + elapsedTime + " milliseconds");
+```
+# Komplexität
+
+n = Anzahl Elememte zu sortieren
+lb = Zeit für ein Besuch
+
+| n    | O(1) | O(n) | O(n^2) | O(n log(n)) |
+|------|------|------|--------|-------------|
+| 1000 | 5ms  | 5ms  | 5ms    | 5ms         |
+| 2000 | 5ms  |      |        |             |
+| 3000 | 5ms  |      |        |             |
+| 4000 | 5ms  |      |        |             |
+
+
+# Spalte O(n)
+O(n) = T(n) = **n * tb**
+O(n) = n * tb = 5ms   
+
+## Example n = 1000
+Example n = 1000;
+tb = 5ms/n => Example tb = 5ms/1ooo = **0.005ms**
+
+## Lösung n = 2000
+**Lösung** n = 2000;
+tb = 0.005ms
+O(n) = n * 0.005ms
+T(n) = 2000 * 0.005ms = **10ms**
+
+# Spalte O(n^2)
+O(n) = T(n) = **n^2 * tb** = 5ms
+n = 1000
+tb = 5ms/n^2 = 0.000'005ms
+
+## Lösung n = 2000
+tb = 0.000'005ms
+T(n) = (2000)^2 * 0.000'005ms = **20ms**
+
+# Spalte O(n log(n))
+T(n) = n * log(n) * tb = 5ms
+tb = 5ms/(n * log(n)) = **0.001667ms**
+
+## Lösung n = 2000
+tb =  **0.001667ms**
+T(n) = n * log(n) * tb 
+T(2000) = 2000 * log(2000) * 0.001667 = **11ms** 
+
+# Tabelle Lösung 
+
+| n    | O(1) | O(n) | O(n^2) | O(n log(n)) |
+|------|------|------|--------|-------------|
+| 1000 | 5ms  | 5ms  | 5ms    | 5ms         |
+| 2000 | 5ms  | 10ms | 20ms   | 11ms        |
+| 3000 | 5ms  | 15ms | 45ms   | 17.31ms     |
+| 4000 | 5ms  | 20ms | 80ms   | 24ms        |
+
+# Unterschied zwischen Sortieren und Suchen
+## Sortieren
+Beim sortieren ändert sich die Reihenfolge.
+## Suchen 
+Beim suchen werden die Datensätze nach der Suche gefiltert. 
+## Unterschied
+Sortieren => Verändert die Reihenfolge der Datnsätzte
+Suche => Filtert die Datensätz
+
+# Warum sollten Daten, in denen oft gesucht wird, sortiert werden?
+Die Suche kann effizienter und einfacher umgesetzt werden.
+
+### Angenommen, die zu sortierenden Elemente werden verzehnfacht, um wieviel länger dauert das Sortieren mit dem Insertion Sort Algorihmus?
+### Lösung 100-mal länger
+O(n^2) |  n = 1000 = 5ms ; n = 10'000 = 5ooms F = 500/5 = **100**
+
