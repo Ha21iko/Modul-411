@@ -238,3 +238,7 @@ Suche => Filtert die Datensätz
 # Warum sollten Daten, in denen oft gesucht wird, sortiert werden?
 Die Suche kann effizienter und einfacher umgesetzt werden.
 
+### Angenommen, die zu sortierenden Elemente werden verzehnfacht, um wieviel länger dauert das Sortieren mit dem Insertion Sort Algorihmus?
+### Lösung 1o-mal länger
+O(n^2) |  n = 1000 = 5ms ; n = 10'000 = 5ooms F = 500/5 = **100**
+
