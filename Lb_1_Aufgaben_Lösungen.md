@@ -119,3 +119,44 @@ int[] array = {2,1,3,4,5};
 // Zwei swap
 int[] array = {3,2,1,4,5};
 ```
+
+# Zeitmessung Aufgabe
+
+## Zeitmessung-Code korrigiren
+```java
+import java.util.Scanner;
+
+ /**
+ This program measures how long it takes to sort an
+ array of a user-specified size with the insertion
+ sort algorithm.
+ */
+ public class InsertionSortTimer
+{
+ public static void main(String[] args)
+{
+ Scanner in = new Scanner(System.in);
+ System.out.print("Enter array size: ");
+ int n = in.nextInt();
+ // Construct random array
+int[] a = ArrayUtil.randomIntArray(n, 100);
+ // Use stopwatch to time selection sort
+ Stopwatch timer1 = new Stopwatch();
+ sorter.sort();
+ System.out.println("Elapsed time: " + timer1.elapsedTime + " milliseconds");
+ }
+}
+```
+## Lösung Zeitmessung Code
+- Messung misst auch noch die Ausgabe auf die Konsole, das will man nicht
+
+### Korrektur Zeitmessung-Code
+```java
+    // Zuerst Wert zuweisen, dann ausgeben!
+    double elapsedTime = timer1.elapsedTime; 
+    System.out.println("Elapsed time: “ + elapsedTime + " milliseconds");
+```
+
+
+
+
