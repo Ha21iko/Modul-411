@@ -47,7 +47,20 @@ boolean search(int[] A, int w)
 ```  
 # Bubble Sort
 ```java
-
+private static void bubbleSort(int[] arr){
+        for (int i = 0; i < arr.length-1; i++){
+            for (int k = 1; k < arr.length-i; k++){
+                if (arr[k-1] > arr[k]){
+                    int t = arr[k-1];
+                    arr[k-1] = arr[k];
+                    arr[k] = t;
+                }
+            }
+        }
+        for (int number: arr) {
+            System.out.print(number+";");
+        }
+    }
 ```
 
 # Selection Sort
@@ -167,22 +180,6 @@ int[] a = ArrayUtil.randomIntArray(n, 100);
     // Zuerst Wert zuweisen, dann ausgeben!
     double elapsedTime = timer1.elapsedTime; 
     System.out.println("Elapsed time: “ + elapsedTime + " milliseconds");
-```
-
-# Bubble Sort
-
-```java
-private void bubbleSort(int[] arr){
-        for (int i = 0; i < arr.length-1; i++){
-            for (int k = 1; k < arr.length-i; k++){
-               if (arr[k-1] > arr[k]){
-                   int t = arr[k-1];
-                   arr[k-1] = arr[k];
-                   arr[k] = t;
-               }
-            }
-        }
-    }
 ```
 # Komplexität
 
