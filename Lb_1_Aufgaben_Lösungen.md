@@ -226,3 +226,15 @@ T(2000) = 2000 * log(2000) * 0.001667 = **11ms**
 | 3000 | 5ms  | 15ms | 45ms   | 17.31ms     |
 | 4000 | 5ms  | 20ms | 80ms   | 24ms        |
 
+# Unterschied zwischen Sortieren und Suchen
+## Sortieren
+Beim sortieren ändert sich die Reihenfolge.
+## Suchen 
+Beim suchen werden die Datensätze nach der Suche gefiltert. 
+## Unterschied
+Sortieren => Verändert die Reihenfolge der Datnsätzte
+Suche => Filtert die Datensätz
+
+# Warum sollten Daten, in denen oft gesucht wird, sortiert werden?
+Die Suche kann effizienter und einfacher umgesetzt werden.
+
