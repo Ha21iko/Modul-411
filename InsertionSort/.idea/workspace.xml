@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="24c84579-d3a6-45dd-9487-8440687a9739" name="Default Changelist" comment="" />
+    <list default="true" id="fd9a74c8-99cd-403f-83a1-7d723be5ba4d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +17,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1YE6xiDUs9FUf1zxGjQGDjq2Div" />
+  <component name="ProjectId" id="1YE85VMs0mLE5PxBA14pjvHxBHC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -28,10 +28,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
-  <component name="RunManager" selected="Application.BubbleSort">
-    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.BubbleSort" />
-      <module name="BubbleSort" />
+  <component name="RunManager" selected="Application.InsertionSort">
+    <configuration name="InsertionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.InsertionSort" />
+      <module name="InsertionSort" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.company.*" />
@@ -44,7 +44,7 @@
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
-      <module name="BubbleSort" />
+      <module name="InsertionSort" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -54,11 +54,11 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.BubbleSort" />
+      <item itemvalue="Application.InsertionSort" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BubbleSort" />
+        <item itemvalue="Application.InsertionSort" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -80,12 +80,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="24c84579-d3a6-45dd-9487-8440687a9739" name="Default Changelist" comment="" />
-      <created>1582495654647</created>
+      <changelist id="fd9a74c8-99cd-403f-83a1-7d723be5ba4d" name="Default Changelist" comment="" />
+      <created>1582496209365</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1582495654647</updated>
-      <workItem from="1582495657918" duration="553000" />
+      <updated>1582496209365</updated>
+      <workItem from="1582496212521" duration="719000" />
     </task>
     <servers />
   </component>
@@ -93,29 +93,25 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1582495761771">
+    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1582496244264">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.87.1920.1040@0.0.1920.1040" timestamp="1582495761771" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1582496211076">
+    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.87.1920.1040@0.0.1920.1040" timestamp="1582496244264" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1582497048618">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.87.1920.1040@0.0.1920.1040" timestamp="1582496211076" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1582496211076">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.87.1920.1040@0.0.1920.1040" timestamp="1582497048618" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1582497048618">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.87.1920.1040@0.0.1920.1040" timestamp="1582496211076" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1582496211076">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.87.1920.1040@0.0.1920.1040" timestamp="1582497048618" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1582497048618">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.87.1920.1040@0.0.1920.1040" timestamp="1582496211076" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1582496211076">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.87.1920.1040@0.0.1920.1040" timestamp="1582497048618" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1582497048618">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.87.1920.1040@0.0.1920.1040" timestamp="1582496211076" />
-    <state x="342" y="141" key="new project wizard" timestamp="1582496209240">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="342" y="141" key="new project wizard/0.0.1920.1040/-1920.87.1920.1040@0.0.1920.1040" timestamp="1582496209240" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.87.1920.1040@0.0.1920.1040" timestamp="1582497048618" />
   </component>
 </project>
