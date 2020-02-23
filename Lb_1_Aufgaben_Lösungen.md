@@ -148,7 +148,7 @@ int[] a = ArrayUtil.randomIntArray(n, 100);
 }
 ```
 ## Lösung Zeitmessung Code
-- Messung misst auch noch die Ausgabe auf die Konsole, das will man nicht
+- Messung misst auch noch die Ausgabe auf der Konsole, das will man nicht
 
 ### Korrektur Zeitmessung-Code
 ```java
@@ -156,6 +156,10 @@ int[] a = ArrayUtil.randomIntArray(n, 100);
     double elapsedTime = timer1.elapsedTime; 
     System.out.println("Elapsed time: “ + elapsedTime + " milliseconds");
 ```
+
+
+
+
 
 
 
