@@ -172,8 +172,55 @@ private void bubbleSort(int[] arr){
         }
     }
 ```
+# Komplexität
+
+n = Anzahl Elememte zu sortieren
+lb = Zeit für ein Besuch
+
+| n    | O(1) | O(2) | O(n^2) | O(n log(n)) |
+|------|------|------|--------|-------------|
+| 1000 | 5ms  |      | 5ms    | 5ms         |
+| 2000 | 5ms  |      |        |             |
+| 3000 | 5ms  |      |        |             |
+| 4000 | 5ms  |      |        |             |
 
 
+# Spalte O(n)
+O(n) = T(n) = **n * tb**
+O(n) = n * tb = 5ms   
 
+## Example n = 1000
+Example n = 1000;
+tb = 5ms/n => Example tb = 5ms/1ooo = **0.005ms**
 
+## Lösung n = 2000
+**Lösung** n = 2000;
+tb = 0.005ms
+O(n) = n * 0.005ms
+T(n) = 2000 * 0.005ms = **10ms**
+
+# Spalte O(n^2)
+O(n) = T(n) = **n^2 * tb** = 5ms
+n = 1000
+tb = 5ms/n^2 = 0.000'005ms
+
+## Lösung n = 2000
+tb = 0.000'005ms
+T(n) = (2000)^2 * 0.000'005ms = **20ms**
+
+# Spalte O(n log(n))
+T(n) = n * log(n) * tb = 5ms
+tb = 5ms/(n * log(n)) = **0.001667ms**
+
+## Lösung n = 2000
+tb =  **0.001667ms**
+T(n) = n * log(n) * tb 
+T(2000) = 2000 * log(2000) * 0.001667 = **11ms** 
+
+| n    | O(1) | O(2) | O(n^2) | O(n log(n)) |
+|------|------|------|--------|-------------|
+| 1000 | 5ms  | 5ms  | 5ms    | 5ms         |
+| 2000 | 5ms  | 10ms | 20ms   | 11ms        |
+| 3000 | 5ms  | 15ms | 45ms   | 17.31ms     |
+| 4000 | 5ms  | 20ms | 80ms   | 24ms        |
 
