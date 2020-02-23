@@ -177,7 +177,7 @@ private void bubbleSort(int[] arr){
 n = Anzahl Elememte zu sortieren
 lb = Zeit für ein Besuch
 
-| n    | O(1) | O(2) | O(n^2) | O(n log(n)) |
+| n    | O(1) | O(n) | O(n^2) | O(n log(n)) |
 |------|------|------|--------|-------------|
 | 1000 | 5ms  |      | 5ms    | 5ms         |
 | 2000 | 5ms  |      |        |             |
