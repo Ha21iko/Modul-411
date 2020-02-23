@@ -157,8 +157,21 @@ int[] a = ArrayUtil.randomIntArray(n, 100);
     System.out.println("Elapsed time: “ + elapsedTime + " milliseconds");
 ```
 
+# Bubble Sort
 
-
+```java
+private void bubbleSort(int[] arr){
+        for (int i = 0; i < arr.length-1; i++){
+            for (int k = 1; k < arr.length-i; k++){
+               if (arr[k-1] > arr[k]){
+                   int t = arr[k-1];
+                   arr[k-1] = arr[k];
+                   arr[k] = t;
+               }
+            }
+        }
+    }
+```
 
 
 
