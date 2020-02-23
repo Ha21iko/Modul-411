@@ -1,3 +1,7 @@
+# Struktogramm 1
+![](struktogramm/Euklidischen_Algorithmus1.svg)
+# Struktogramm 2
+![](struktogramm/Euklidischen_Algorithmus1.svg)
 # Frage SWAP-Methode
 Warum wird in der swap Methode eine temp Variable benötigt? Was
 würde passieren, wenn wir einfach A[i] an A[j] und A[j] an A[i] zuweisen
