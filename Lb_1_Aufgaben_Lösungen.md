@@ -71,26 +71,18 @@ private static void bubbleSort(int[] arr){
 Gegeben ist folgende Sequenz 9,7,8,1,2,3
 
 ```java
-private static void selectionSort(int[] arr){
+private void selectionSort(){
         int n = arr.length;
-
-        // One by one move boundary of unsorted subarray
-        for (int i = 0; i < n-1; i++)
-        {
-            // Find the minimum element in unsorted array
-            int min_idx = i;
-            for (int j = i+1; j < n; j++)
-                if (arr[j] < arr[min_idx]){
-                    min_idx = j;
+        for (int i = 0; i < n-1; i++){
+            int minIndex = i;
+            for (int next = i+1; next < n; next++) {
+                if (arr[next] < arr[minIndex]){
+                    minIndex = next;
                 }
-            // Swap the found minimum element with the first
-            // element
-            int temp = arr[min_idx];
-            arr[min_idx] = arr[i];
+            }
+            int temp = arr[minIndex];
+            arr[minIndex] = arr[i];
             arr[i] = temp;
-        }
-        for (int number: arr) {
-            System.out.print(number+",");
         }
     }
 ```    
